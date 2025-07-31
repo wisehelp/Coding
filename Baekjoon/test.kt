@@ -1,0 +1,4 @@
+package Baekjoon
+
+class test {
+}

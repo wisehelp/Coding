@@ -5,9 +5,9 @@
 
 ## 📂 Problem Source
 
-- [Baekjoon Online Judge](https://acmicpc.net) (파일 정리 후 올릴 예정)
-- [Programmers](https://programmers.co.kr/) (파일 정리 후 올릴 예정)
-- [CodeUp](https://codeup.kr/) (파일 정리 후 올릴 예정)
+- [Baekjoon Online Judge](https://acmicpc.net) (파일 정리 중)
+- [Programmers](https://programmers.co.kr/) (파일 정리 중)
+- [CodeUp](https://codeup.kr/) (파일 정리 중)
 - [Biko](https://www.biko.kr/)
 - [SWEA (Samsung SW Expert Academy)](https://swexpertacademy.com/)
 

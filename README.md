@@ -1,21 +1,23 @@
 ## 📘 CodingProblem
 
-다양한 온라인 저지(Online Judge)에서 해결한 **코딩 문제**를 기록하는 저장소입니다.  
+온라인 저지(Online Judge) **코딩 문제** 기록 저장소
 
 
 ## 📂 Problem Source
 
-- [Baekjoon Online Judge](https://acmicpc.net)
-- [Programmers](https://programmers.co.kr/) <---- 풀긴 했는데 파일정리 귀찮아서 안올림
-- [CodeUp](https://codeup.kr/) <---- 자바 있긴 한데 코틀린 없어서 안품
-- [SWEA (Samsung SW Expert Academy)](https://swexpertacademy.com/) <---- 회원가입도 안해봄
-- [Others...]
+- [Baekjoon Online Judge](https://acmicpc.net) (파일 정리 후 올릴 예정)
+- [Programmers](https://programmers.co.kr/) (파일 정리 후 올릴 예정)
+- [CodeUp](https://codeup.kr/) (파일 정리 후 올릴 예정)
+- [Biko](https://www.biko.kr/)
+- [SWEA (Samsung SW Expert Academy)](https://swexpertacademy.com/)
 
 
 ## 🛠️ Languages & Development Environment
 
-- **언어**: [Kotlin](https://kotlinlang.org/) & [Java](https://www.java.com/ko/)
-- **툴**: [IntelliJ IDEA](https://www.jetbrains.com/)
+[![JetBrains](https://resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg)](https://jb.gg/OpenSourceSupport)
+
+[![Kotlin](https://img.shields.io/badge/Kotlin-0095D5?style=for-the-badge&logo=kotlin&logoColor=white)](https://kotlinlang.org/)  
+[![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)](https://www.java.com/)  
 
 
 
@@ -40,46 +42,4 @@ programmers/
 │       └── 기능개발.kt
 README.md
 
-```
-
-## 🔍 Kotlin Example DFS / BFS
-```kotlin
-fun dfs(graph: Map<Int, List<Int>>, start: Int, visited: MutableSet<Int> = mutableSetOf()) {
-    if (visited.contains(start)) {
-        return
-    }
-    println(start)
-    visited.add(start)
-    val neighbors = graph[start]
-    if (neighbors != null) {
-        for (node in neighbors) {
-            dfs(graph, node, visited)
-        }
-    }
-}
-```
-```kotlin
-import java.util.LinkedList
-
-fun bfs(graph: Map<Int, List<Int>>, start: Int) {
-    val visited = mutableSetOf<Int>()
-    val queue = LinkedList<Int>()
-    queue.add(start)
-    visited.add(start)
-
-    while (queue.isNotEmpty()) {
-        val current = queue.removeFirst()
-        println(current)
-
-        val neighbors = graph[current]
-        if (neighbors != null) {
-            for (node in neighbors) {
-                if (!visited.contains(node)) {
-                    queue.add(node)
-                    visited.add(node)
-                }
-            }
-        }
-    }
-}
 ```

@@ -9,7 +9,6 @@
 - [Programmers](https://programmers.co.kr/) (파일 정리 중)
 - [CodeUp](https://codeup.kr/) (파일 정리 중)
 - [Biko](https://www.biko.kr/)
-- [SWEA (Samsung SW Expert Academy)](https://swexpertacademy.com/)
 
 
 ## 🛠️ Languages & Development Environment

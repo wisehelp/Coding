@@ -31,20 +31,20 @@ public class 하이퍼버닝 {
         for(int i = 0; i < n; i ++){
 
             int reward = -1; // 가장 큰 보상 (임시)
-            int index = -1; // 해당 몬스터 번호
+            int num = -1; // 해당 몬스터 번호
 
             for(int k = 0; k < n; k++){
 
                 //이미 사냥한 몬스터 q[k]==0
                 if(q[k] != 0 && q[k] <= level && u[k] > reward){
                     reward = u[k]; // 더 큰 보상 설정
-                    index = k; // 해당 몬스터 번호
+                    num = k; // 해당 몬스터 번호
                 }
             }
-            if(index == -1) break;
+            if(num == -1) break;
 
-            level += u[index];
-            q[index] = 0; // 사냥 완료!
+            level += u[num];
+            q[num] = 0; // 사냥 완료!
         }
 
         System.out.println(level);

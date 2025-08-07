@@ -10,8 +10,9 @@ fun main(){
         val b = t[2 * i + 1]
         val mint = minOf(a, b)
         val clear = mint / m
-        val s = 2 * mint
+        val s = 2L * mint
         result += s * clear
     }
     println(result)
+
 }
